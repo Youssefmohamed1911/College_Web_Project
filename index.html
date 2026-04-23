@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>POWER Engineering Consultancy</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Bebas Neue (display) + Lato (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">POWER<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#team" class="mobile-link">Team</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-label reveal">— Engineering Solutions Since 1998 —</p>
+      <h1 class="hero-title reveal">
+        BUILDING<br/>
+        <span class="outline-text">THE FUTURE</span><br/>
+        WITH PRECISION
+      </h1>
+      <p class="hero-desc reveal">
+        POWER delivers world-class structural, civil, and mechanical engineering consultancy 
+        for infrastructure projects that define generations.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn-primary">Start a Project</a>
+        <a href="#projects" class="btn-outline">View Our Work</a>
+      </div>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-number" data-target="350">0</span>
+        <span class="stat-label">Projects Completed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="26">0</span>
+        <span class="stat-label">Years of Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="48">0</span>
+        <span class="stat-label">Countries Served</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" class="services">
+    <div class="section-header reveal">
+      <span class="section-tag">What We Do</span>
+      <h2 class="section-title">Our <span class="accent">Services</span></h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="30" width="36" height="6" rx="2" fill="currentColor" opacity="0.3"/>
+            <rect x="10" y="18" width="28" height="12" rx="2" fill="currentColor" opacity="0.6"/>
+            <polygon points="24,4 42,18 6,18" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Structural Engineering</h3>
+        <p>Designing safe, resilient structures for commercial, residential, and industrial applications using cutting-edge analysis software.</p>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 42 Q12 28 24 32 Q36 36 42 22" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="12" cy="36" r="4" fill="currentColor" opacity="0.5"/>
+            <circle cx="24" cy="32" r="4" fill="currentColor" opacity="0.7"/>
+            <circle cx="36" cy="26" r="4" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Civil Engineering</h3>
+        <p>From highways and bridges to drainage and urban planning — we handle the full spectrum of civil infrastructure.</p>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="3" fill="none"/>
+            <circle cx="24" cy="24" r="4" fill="currentColor"/>
+            <line x1="24" y1="6" x2="24" y2="14" stroke="currentColor" stroke-width="2"/>
+            <line x1="24" y1="34" x2="24" y2="42" stroke="currentColor" stroke-width="2"/>
+            <line x1="6" y1="24" x2="14" y2="24" stroke="currentColor" stroke-width="2"/>
+            <line x1="34" y1="24" x2="42" y2="24" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>Mechanical Systems</h3>
+        <p>HVAC, piping, and mechanical plant design optimised for energy efficiency and long-term operational performance.</p>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="32" height="24" rx="3" stroke="currentColor" stroke-width="3" fill="none"/>
+            <line x1="16" y1="38" x2="32" y2="38" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <line x1="24" y1="32" x2="24" y2="38" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="16" x2="34" y2="16" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+            <line x1="14" y1="22" x2="28" y2="22" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Project Management</h3>
+        <p>End-to-end project delivery with rigorous scheduling, cost control, and stakeholder communication from concept to commissioning.</p>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 38 L10 22 L24 10 L38 22 L38 38 Z" stroke="currentColor" stroke-width="3" fill="none"/>
+            <rect x="18" y="28" width="12" height="10" fill="currentColor" opacity="0.5"/>
+            <path d="M6 22 L24 6 L42 22" stroke="currentColor" stroke-width="2" fill="none" opacity="0.4"/>
+          </svg>
+        </div>
+        <h3>Environmental Assessment</h3>
+        <p>Comprehensive Environmental Impact Assessments (EIA) ensuring your project meets regulatory and sustainability requirements.</p>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="24,6 44,18 44,42 4,42 4,18" stroke="currentColor" stroke-width="3" fill="none"/>
+            <line x1="4" y1="18" x2="44" y2="18" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+            <line x1="16" y1="18" x2="16" y2="42" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+            <line x1="32" y1="18" x2="32" y2="42" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Infrastructure Planning</h3>
+        <p>Strategic planning and feasibility studies for large-scale public and private infrastructure investments worldwide.</p>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="projects">
+    <div class="section-header reveal">
+      <span class="section-tag">Portfolio</span>
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+    </div>
+
+    <div class="projects-filter reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="structural">Structural</button>
+      <button class="filter-btn" data-filter="civil">Civil</button>
+      <button class="filter-btn" data-filter="mechanical">Mechanical</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card reveal" data-category="structural">
+        <div class="project-img" style="background-color: #1a2a3a;">
+          <div class="project-overlay">
+            <span class="project-tag">Structural</span>
+          </div>
+          <div class="project-visual structural-visual"></div>
+        </div>
+        <div class="project-info">
+          <h3>Khalifa Bay Bridge</h3>
+          <p>Abu Dhabi, UAE · 2023</p>
+          <span class="project-value">$420M</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-category="civil">
+        <div class="project-img" style="background-color: #1a3a2a;">
+          <div class="project-overlay">
+            <span class="project-tag">Civil</span>
+          </div>
+          <div class="project-visual civil-visual"></div>
+        </div>
+        <div class="project-info">
+          <h3>Metro Line Extension</h3>
+          <p>Cairo, Egypt · 2022</p>
+          <span class="project-value">$1.2B</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-category="mechanical">
+        <div class="project-img" style="background-color: #2a1a3a;">
+          <div class="project-overlay">
+            <span class="project-tag">Mechanical</span>
+          </div>
+          <div class="project-visual mechanical-visual"></div>
+        </div>
+        <div class="project-info">
+          <h3>Offshore Platform HVAC</h3>
+          <p>North Sea, Norway · 2022</p>
+          <span class="project-value">$85M</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-category="structural">
+        <div class="project-img" style="background-color: #3a2a1a;">
+          <div class="project-overlay">
+            <span class="project-tag">Structural</span>
+          </div>
+          <div class="project-visual structural-visual2"></div>
+        </div>
+        <div class="project-info">
+          <h3>City Tower Complex</h3>
+          <p>Nairobi, Kenya · 2021</p>
+          <span class="project-value">$210M</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-category="civil">
+        <div class="project-img" style="background-color: #1a3a3a;">
+          <div class="project-overlay">
+            <span class="project-tag">Civil</span>
+          </div>
+          <div class="project-visual civil-visual2"></div>
+        </div>
+        <div class="project-info">
+          <h3>Port Expansion Phase II</h3>
+          <p>Hamburg, Germany · 2021</p>
+          <span class="project-value">$670M</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-category="mechanical">
+        <div class="project-img" style="background-color: #2a3a1a;">
+          <div class="project-overlay">
+            <span class="project-tag">Mechanical</span>
+          </div>
+          <div class="project-visual mechanical-visual2"></div>
+        </div>
+        <div class="project-info">
+          <h3>Desalination Plant</h3>
+          <p>Riyadh, Saudi Arabia · 2020</p>
+          <span class="project-value">$330M</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="about">
+    <div class="about-text reveal">
+      <span class="section-tag">Who We Are</span>
+      <h2 class="section-title">Engineering <span class="accent">Excellence</span><br/>Since 1998</h2>
+      <p>POWER was founded by a team of visionary engineers with a single mission: to deliver technically superior and commercially viable solutions for the world's most complex infrastructure challenges.</p>
+      <p>We combine deep technical expertise with innovative thinking, working across structural, civil, mechanical, and environmental disciplines to deliver integrated engineering solutions.</p>
+      <ul class="about-list">
+        <li><span class="check">✓</span> ISO 9001:2015 Certified</li>
+        <li><span class="check">✓</span> International Engineering Standards</li>
+        <li><span class="check">✓</span> In-house BIM & CAD Teams</li>
+        <li><span class="check">✓</span> 24/7 Project Support</li>
+      </ul>
+      <a href="#contact" class="btn-primary">Work With Us</a>
+    </div>
+    <div class="about-visual reveal">
+      <div class="blueprint-card">
+        <div class="blueprint-inner">
+          <div class="bp-grid"></div>
+          <div class="bp-shape"></div>
+          <div class="bp-lines">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="bp-label">STRUCTURAL PLAN — POWER ENG.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEAM ===================== -->
+  <section id="team" class="team">
+    <div class="section-header reveal">
+      <span class="section-tag">Our Experts</span>
+      <h2 class="section-title">Meet the <span class="accent">Team</span></h2>
+    </div>
+    <div class="team-grid">
+
+      <div class="team-card reveal">
+        <div class="team-avatar" style="--clr: #e8c97e;">
+          <span>JH</span>
+        </div>
+        <h3>James Hartley</h3>
+        <p class="team-role">Chief Executive Officer</p>
+        <p class="team-bio">25+ years in structural engineering. Former lead at Arup and WSP Global.</p>
+        <div class="team-socials">
+          <a href="#">in</a>
+          <a href="#">tw</a>
+        </div>
+      </div>
+
+      <div class="team-card reveal">
+        <div class="team-avatar" style="--clr: #7eb8e8;">
+          <span>SA</span>
+        </div>
+        <h3>Sara Al-Amin</h3>
+        <p class="team-role">Head of Civil Engineering</p>
+        <p class="team-bio">PhD Civil Engineering, MIT. Expert in urban drainage and highway design.</p>
+        <div class="team-socials">
+          <a href="#">in</a>
+          <a href="#">tw</a>
+        </div>
+      </div>
+
+      <div class="team-card reveal">
+        <div class="team-avatar" style="--clr: #7ee8a8;">
+          <span>MK</span>
+        </div>
+        <h3>Marcus Klein</h3>
+        <p class="team-role">Director of Mechanical Systems</p>
+        <p class="team-bio">Specialist in industrial HVAC and process piping for energy sector projects.</p>
+        <div class="team-socials">
+          <a href="#">in</a>
+          <a href="#">tw</a>
+        </div>
+      </div>
+
+      <div class="team-card reveal">
+        <div class="team-avatar" style="--clr: #e87eb8;">
+          <span>LO</span>
+        </div>
+        <h3>Layla Osei</h3>
+        <p class="team-role">Environmental Lead</p>
+        <p class="team-bio">MSc Environmental Management, UCL. Over 80 EIA reports across 20 countries.</p>
+        <div class="team-socials">
+          <a href="#">in</a>
+          <a href="#">tw</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="contact">
+    <div class="contact-left reveal">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Let's Build<br/><span class="accent">Something Great</span></h2>
+      <p>Have a project in mind? Fill out the form and one of our senior engineers will get back to you within 24 hours.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Headquarters</strong>
+            <p>12 Engineers Way, London, EC2A 4BX</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div>
+            <strong>Phone</strong>
+            <p>+44 20 7946 0312</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <strong>Email</strong>
+            <p>hello@POWEReng.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-right reveal">
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Required</label>
+          <select id="service" name="service">
+            <option value="">— Select a Service —</option>
+            <option>Structural Engineering</option>
+            <option>Civil Engineering</option>
+            <option>Mechanical Systems</option>
+            <option>Project Management</option>
+            <option>Environmental Assessment</option>
+            <option>Infrastructure Planning</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Project Brief *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Describe your project and requirements..." required></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn-primary btn-full" id="submitBtn">
+          Send Enquiry
+        </button>
+        <div class="form-success" id="formSuccess">
+          ✅ Thank you! We'll be in touch within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">POWER<span>.</span></a>
+        <p>Engineering the infrastructure of tomorrow with precision, innovation, and integrity.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Structural Engineering</a></li>
+          <li><a href="#services">Civil Engineering</a></li>
+          <li><a href="#services">Mechanical Systems</a></li>
+          <li><a href="#services">Project Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter / X</a></li>
+          <li><a href="#">ResearchGate</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 POWER Engineering Consultancy. All rights reserved.</p>
+      <p>Privacy Policy · Terms of Use</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
