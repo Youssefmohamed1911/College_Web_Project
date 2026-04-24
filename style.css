@@ -24,6 +24,12 @@
   --max-width:  1160px;
 }
 
+/* Performance: Below-the-fold rendering optimization */
+section:not(#home), footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
+}
+
 /* ---- 2. RESET & BASE ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1158,6 +1164,12 @@ h1, h2, h3, h4 {
 #navbar {
   z-index: 9000;
 }
+
 section {
-  transition: filter 0.0s, transform 0.0s; 
+  transition: filter 0.3s ease, transform 0.3s ease; 
+}
+
+/* Performance: Optimizing layers */
+.hero, .project-card, .team-card, .service-card {
+  will-change: transform;
 }
