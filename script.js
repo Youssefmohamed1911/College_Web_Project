@@ -16,13 +16,13 @@ const LIFT_START   = 48;
 const EASE_POW     = 2.2;
 
 function easeInOut(t) {
-  return t < 0.5
+  return t < 0.2
     ? Math.pow(2 * t, EASE_POW) / 2
     : 1 - Math.pow(2 * (1 - t), EASE_POW) / 2;
 }
 
 // Prepare Zip-Up Data
-const zipSections = Array.from(document.querySelectorAll('section:not(.hero), footer'));
+const zipSections = Array.from(document.querySelectorAll('section:not(.hero):not(.contact)'));
 const zipData = zipSections.map((section, i) => {
   section.classList.add('zip-section');
   
@@ -126,6 +126,10 @@ window.addEventListener('resize', () => {
 });
 
 // Initial run
+window.addEventListener('load', () => {
+  refreshZipOffsets();
+  requestAnimationFrame(updateScroll);
+});
 refreshZipOffsets();
 requestAnimationFrame(updateScroll);
 
@@ -341,7 +345,17 @@ if (form) {
 
 
 /* -------------------------------------------------------
-   8. SMOOTH ANCHOR LINKS
+   8. BACK TO TOP CLICK
+------------------------------------------------------- */
+if (backTopBtn) {
+  backTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+
+/* -------------------------------------------------------
+   9. SMOOTH ANCHOR LINKS
 ------------------------------------------------------- */
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
